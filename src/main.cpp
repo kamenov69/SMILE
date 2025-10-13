@@ -1,3 +1,13 @@
+
+
+/* v0.1 
+
+   main.cpp - Main loop for Arduino
+   Part of SMILE project -
+
+*/
+
+
 #include <Arduino.h>
 #include "board.h"
 #include "globals.h"

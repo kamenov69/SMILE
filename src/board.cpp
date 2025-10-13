@@ -19,7 +19,8 @@ Ticker ledTicker(_led_task, LED_PERIOD, 0, MILLIS);
 
 
 void setup_board(){   
-    Serial.begin(9600);
+    //Serial.begin(9600);
+    Serial.begin(115200);
  
     pinMode(LED_BUILTIN, OUTPUT); // Initialize the BUILTIN_LED pin as an output
     digitalWrite(LED_BUILTIN, LOW); // Turn the LED off by making the voltage LOW

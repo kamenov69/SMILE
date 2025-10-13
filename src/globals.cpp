@@ -16,8 +16,8 @@ global_t globals[] = {
     {(char*)"w2", 2.0, 0.01, 100000.0,true},
     {(char*)"a1", 1.0, 0.01, 100000.0, true},
     {(char*)"a2", 1.0, 0.01, 100000.0, true},
-    {(char*)"f1", 1.0, 1.0, 100000.0, true},
-    {(char*)"f2", 1.0, 1.0, 100000.0, true}
+    {(char*)"f1", 0.0, 0.0, 0.0, true},
+    {(char*)"f2", 0.0, 0.0, 0.0, true}
 };
 int MAX_GLOBALS = sizeof(globals)/sizeof(global_t);
 

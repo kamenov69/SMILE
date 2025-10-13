@@ -9,10 +9,15 @@
 //    globals[index("f2")].value = globals[index("f2")].value + (random(0,100)-50)*0.01;
 //}
 #define _2PI 6.283185307179586476925286766559
+#define time_task_periond_in_ms 1
+
 
 void _timer_task(void){
-   static float time_sec = 0;
-   time_sec += 0.01;
+    const static float d_timer = (time_task_periond_in_ms/1000.0);   
+    static float time_sec = 0;
+   
+   time_sec += d_timer; // in seconds
+
    float amplitude  =  globals[index("a1")].value;
    float frequency  =  globals[index("w1")].value; // Hz
    float offset     =  globals[index("a1")].value * 2;
@@ -32,7 +37,7 @@ void _timer_task(void){
 
 
 
-Ticker t = Ticker(_timer_task, 10, 0, MILLIS);
+Ticker t = Ticker(_timer_task, time_task_periond_in_ms, 0, MILLIS);
 
 
 void setup_fake_data() {
