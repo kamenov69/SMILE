@@ -10,10 +10,10 @@
 //}
 #define _2PI 6.283185307179586476925286766559
 #define time_task_periond_in_ms 1
-
+const static float d_timer = float(time_task_periond_in_ms/1000.0); 
 
 void _timer_task(void){
-    const static float d_timer = (time_task_periond_in_ms/1000.0);   
+      
     static float time_sec = 0;
    
    time_sec += d_timer; // in seconds
