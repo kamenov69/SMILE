@@ -4,10 +4,7 @@
 #include "globals.h"
 
 
-//{
-//    globals[index("f1")].value = globals[index("f1")].value + (random(0,100)-50)*0.01;
-//    globals[index("f2")].value = globals[index("f2")].value + (random(0,100)-50)*0.01;
-//}
+
 #define _2PI 6.283185307179586476925286766559
 #define time_task_periond_in_ms 1
 const static float d_timer = float(time_task_periond_in_ms/1000.0); 

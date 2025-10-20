@@ -71,5 +71,4 @@ void _set_mode(int argn, char** args){
         mode = m;       
     }
     cmdGetStream()->println(mode); 
-    cmdGetStream()->println();    
 }

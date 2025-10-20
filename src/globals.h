@@ -1,14 +1,13 @@
 #ifndef __GLOBAL_H
 #define __GLOBAL_H
 
-//#define MAX_GLOBALS 3
-
 extern int MAX_GLOBALS;
 extern const int ee_size;
 
 #define globaldata_t float
-//typedef int globaldata_t ;
 //#define  globaldata_t int
+
+
 typedef struct __globals_
 {
     char *name;
