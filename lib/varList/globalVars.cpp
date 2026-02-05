@@ -24,8 +24,6 @@ float parse_float(int nargs, char **args){
   }
 
 void _vars_update(int argc, char **args){
-    //char n[16];
-    //strcpy(n, args[0]);
     if(argc > 1){
        VARS_TYPE_ tmp = (VARS_TYPE_)(parse_float(--argc, ++args));
        --args;
@@ -39,9 +37,6 @@ void _vars_update(int argc, char **args){
 void _vars_list(int argc, char **args){
    for (auto* n = globals.head(); n != nullptr; n = n->next) {
        Stream *s = cmdGetStream();
-       //s->print(F("name="));
-       //char buf[16];
-       //strcpy_P(buf, n->name_P);
        s->print(n->name_P);
        s->print(F(", "));
        s->print(n->value);

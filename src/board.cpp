@@ -12,7 +12,7 @@ void _set_mode(int argn, char** args);
 void _led_task(void);
 
 
-uint8_t mode = 2;
+uint8_t mode = 0;
 
 Ticker ledTicker(_led_task, LED_PERIOD, 0, MILLIS);
 
@@ -29,8 +29,7 @@ void setup_board(){
     digitalWrite(LED_BUILTIN, LOW); // Turn the LED off by making the voltage LOW
 
     cmdInit(&Serial);
-    cmdAdd("hello", [](int argn, char** args){cmdGetStream()->println("STM32LibTest");});
-    //cmdAdd("mode", _set_mode);
+    cmdAdd("hello", [](int argn, char** args){cmdGetStream()->println("Arduino SMILE");});
     add_new_global_var("mode", mode, 0, 3);
     ledTicker.start();
 }
