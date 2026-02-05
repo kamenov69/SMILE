@@ -26,7 +26,7 @@ void setup_board(){
     digitalWrite(LED_BUILTIN, LOW); // Turn the LED off by making the voltage LOW
 
     cmdInit(&Serial);
-    cmdAdd("hello", [](int argn, char** args){cmdGetStream()->println("SMILE");});
+    cmdAdd("hello", [](int argn, char** args){cmdGetStream()->println("STM32LibTest");});
     cmdAdd("mode", _set_mode);
 
     ledTicker.start();

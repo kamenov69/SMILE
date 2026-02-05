@@ -10,7 +10,7 @@
 const static float d_timer = float(time_task_periond_in_ms/1000.0); 
 
 void _timer_task(void){
-      
+    float tmp_t = (float) micros();  
     static float time_sec = 0;
    
    time_sec += d_timer; // in seconds
@@ -28,7 +28,8 @@ void _timer_task(void){
 
     globals[index("f2")].value = offset + amplitude * sin(_2PI*frequency*time_sec);
 
-     
+    tmp_t = (float) micros() - tmp_t ;
+    if(tmp_t > globals[index("t")].value) globals[index("t")].value = tmp_t;
 
 }
 

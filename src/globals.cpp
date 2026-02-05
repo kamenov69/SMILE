@@ -12,12 +12,14 @@ global_t globals[] = {
     //min = max  = read only
     
     //save and read in ee      
-    {(char*)"w1", 1.0, 0.01, 10000.0, true},  // frequency in Hz of the synthesized sine wave 1
-    {(char*)"w2", 2.0, 0.01, 10000.0, true},  // frequency in Hz of the synthesized sine wave 2
+    {(char*)"w1", 1.0, 0.00, 50.0, true},  // frequency in Hz of the synthesized sine wave 1
+    {(char*)"w2", 2.0, 0.00, 50.0, true},  // frequency in Hz of the synthesized sine wave 2
     {(char*)"a1", 1.0, 0.01, 10.0, true},     // amplitude in Hz of the synthesized sine wave 1
     {(char*)"a2", 1.0, 0.01, 10.0, true},     // amplitude in Hz of the synthesized sine wave 2
     {(char*)"f1", 0.0, 0.0, 0.0, true},       // (read only) output of synthesized sine wave 1
-    {(char*)"f2", 0.0, 0.0, 0.0, true}        // (read only) output of synthesized sine wave 1
+    {(char*)"f2", 0.0, 0.0, 0.0, true},       // (read only) output of synthesized sine wave 1
+    {(char*)"t", 0.0, 0.0, 0.0, true}        // (read only) output of synthesized sine wave 1
+    
 };
 int MAX_GLOBALS = sizeof(globals)/sizeof(global_t);
 
