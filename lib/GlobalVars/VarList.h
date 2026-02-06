@@ -20,24 +20,16 @@ public:
   bool add(const char* name, T initial, T minVal, T maxVal) {
     if (!name) return false;
     if (findNode(name)) return false;
-
-    //Node* n = new (std::nothrow) Node;
-    //if (!n) return false;
     Node* n = (Node*)malloc(sizeof(Node));
     if (!n) return false;
-    //char *cmd_name = (char *)malloc(strlen(name)+1);
     size_t L = strlen(name);
     n->name_P = (char *)malloc(L+1);
-  
     if (!n->name_P) 
     { free(n) ; 
       return false; 
     }
-    //strcpy(cmd_name, name);
-    //memcpy(n->name_P, name_P, L + 1);
     strcpy(n->name_P,name);
     n->name_P[strlen(name)] = '\0';
-    //n->name_P  = name_P;
     n->minVal = minVal;
     n->maxVal = maxVal;
     n->value  = clamp(initial, minVal, maxVal);
@@ -58,6 +50,19 @@ public:
         //out = n->value;
         return n->value;
     }
+
+   T min_val(const char* name_P)const{
+        Node* n = findNode(name_P);
+        if (!n) return false;
+        return n->minVal;
+    }
+
+    T max_val(const char* name_P)const{
+        Node* n = findNode(name_P);
+        if (!n) return false;
+        return n->maxVal;
+    }
+
 
   bool set( const char* name_P, T v){
     Node* n = findNode(name_P);
@@ -86,7 +91,7 @@ private:
   Node* head_;
 
   static T clamp(T v, T lo, T hi) {
-    if (lo == hi) return v;   //float ???
+    if ((hi - lo) <= (T) 0.3 ) return v;   //float ???
     if (v < lo) return lo;
     if (v > hi) return hi;
     return v;

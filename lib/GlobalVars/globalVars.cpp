@@ -25,9 +25,12 @@ float parse_float(int nargs, char **args){
 
 void _vars_update(int argc, char **args){
     if(argc > 1){
-       VARS_TYPE_ tmp = (VARS_TYPE_)(parse_float(--argc, ++args));
-       --args;
-       globals.set(args[0], tmp);
+       VARS_TYPE_ tmp = (VARS_TYPE_)(parse_float(--argc, args+1));
+       //--args;
+       if( (globals.max_val(args[0]) - globals.min_val(args[0])) > (VARS_TYPE_)0.3){
+            globals.set(args[0], tmp);
+       }
+      
     }
     cmdGetStream()->println(globals.get(args[0]));
     
