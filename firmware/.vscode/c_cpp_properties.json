@@ -8,11 +8,11 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/include",
-                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/src",
-                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/lib/GlobalVars",
-                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/lib/Ticker",
-                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/lib/CmdArduino",
+                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/include",
+                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/src",
+                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/lib/GlobalVars",
+                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/lib/Ticker",
+                "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/lib/CmdArduino",
                 "/home/kamen/.platformio/packages/framework-arduino-avr/cores/arduino",
                 "/home/kamen/.platformio/packages/framework-arduino-avr/variants/mega",
                 "/home/kamen/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
@@ -25,11 +25,11 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/include",
-                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/src",
-                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/lib/GlobalVars",
-                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/lib/Ticker",
-                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/lib/CmdArduino",
+                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/include",
+                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/src",
+                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/lib/GlobalVars",
+                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/lib/Ticker",
+                    "/home/kamen/Documents/PlatformIO/Projects/SMILE_Arduino/firmware/lib/CmdArduino",
                     "/home/kamen/.platformio/packages/framework-arduino-avr/cores/arduino",
                     "/home/kamen/.platformio/packages/framework-arduino-avr/variants/mega",
                     "/home/kamen/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
