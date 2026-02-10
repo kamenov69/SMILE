@@ -25,8 +25,9 @@ class PykiDev(Pykiba):
 
         Automatically creates Python methods matching the Arduino's serial command list.
         Very useful for dynamic, readable command execution.
-        """
-        command_list = self.command("help")
+        """  
+        command_list = self.command("hlp")
+        command_list.append('hlp')
         for cmd in command_list:
             def function_template(*args, captured_name=cmd):
                 return self.command(captured_name, *args)
