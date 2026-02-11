@@ -2,8 +2,8 @@
 
 import time, sys 
 import zerorpc
-from pykiba import serial_ports_list, search_by_manufacturer, get_my_ip, print_my_ip
-from pykiba import PykiDev
+from pykidev import serial_ports_list, search_by_manufacturer, get_my_ip, print_my_ip
+from pykidev import PykiDev
 #from tenacity import retry, stop_after_attempt, wait_fixed
 
 
@@ -53,6 +53,7 @@ def start_server( com_port = None , baudrate = 115200, name = None,  n = None, b
     
     else:
         raise ConnectionError(" Port not definet")   
+        sys.exit()
     
         
     print(f"Opening: {prt_device} @ baudrate: {baudrate}")

@@ -21,7 +21,8 @@ float calck_sin(void){
 }
 
 void _timer_task(void){
-    
+   unsigned long task_tmr = micros();
+
    amplitude  =  globals.get("a1");
    frequency  =  globals.get("w1"); // Hz
    offset     =  globals.get("a1")*2.0;
@@ -32,7 +33,9 @@ void _timer_task(void){
    frequency  =  globals.get("w2"); // Hz
    offset     =  globals.get("a2")*2.0;
    
-   globals.set("f2", calck_sin()); 
+   globals.set("f2", calck_sin());
+   task_tmr = micros()  - task_tmr;
+   if(globals.get("t") < (float)task_tmr)  globals.set("t", (float)task_tmr);
 
 }
 
@@ -49,6 +52,7 @@ void setup_ps_data() {
     add_new_global_var("a2", 3.1, 0.0, 10.0);
     add_new_global_var("f1", 0.1, 0.0, 0.0); // read only member 
     add_new_global_var("f2", 0.1, 0.0, 0.0); // read only 
+    add_new_global_var("t", 0, 0, 0);
 
     t.start();
 
