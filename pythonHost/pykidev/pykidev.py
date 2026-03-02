@@ -27,7 +27,7 @@ class PykiDev(Pykiba):
         Very useful for dynamic, readable command execution.
         """  
         command_list = self.command("hlp")
-        command_list.append('hlp')
+        #command_list.append('hlp')
         for cmd in command_list:
             def function_template(*args, captured_name=cmd):
                 return self.command(captured_name, *args)
@@ -51,3 +51,6 @@ class PykiDev(Pykiba):
         """
         time.sleep(seconds)
         return "End"
+
+if __name__ == "__main__":
+    ard = PykiDev('/dev/ttyACM0', baudrate = 115200) 

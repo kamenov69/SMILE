@@ -143,14 +143,14 @@ class Pykiba(serial.Serial):
                 continue
             except ValueError:
                 pass
-
+            #print(f'control1  {word = }')
             output_val.append(word)
 
         if len(output_val) == 1:
             output_val = output_val[0]
         elif output_val == []:
             output_val = None
-
+        #print(f'{output_val =}')
         return output_val
 
     def command(self, *args, timeout=2.5):
@@ -186,6 +186,8 @@ class Pykiba(serial.Serial):
             if not line:
                 break
             if self.echo_of_the_command in line or b'>>' in line:
+                self.echo_of_the_command = b'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+                #print(f'echo line  {line}')
                 continue
             line = self.parse_line(line)
             return_value.append(line)
@@ -210,4 +212,5 @@ class Pykiba(serial.Serial):
         self.close()
 
 
-
+if __name__ == "__main__":
+    ard = Pykiba('/dev/ttyACM0', baudrate = 115200) 
