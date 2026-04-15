@@ -58,7 +58,7 @@ pip install jupyter matplotlib ipywidgets
 ```python
 from pykidev import PykiDev
 
-ard = PykiDev('/dev/ttyACM0', baudrate=115200)
+ard = PykiDev('/dev/ttyACM0', baudrate=9600)
 print(ard.hello())
 ```
 
@@ -69,13 +69,13 @@ print(ard.hello())
 Start server:
 
 ```bash
-smile --n=0 --baudrate=115200 --bind_port=2020
+smile --n=0 --baudrate=9600 --bind_port=2020
 ```
 
 Or:
 
 ```bash
-python smile.py --n=0 --baudrate=115200 --bind_port=2020
+python smile.py --n=0 --baudrate=9600 --bind_port=2020
 ```
 
 ---
