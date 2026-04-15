@@ -73,7 +73,7 @@ print(ard.hello())
 ### 3. Run as a network service (distributed mode)
 
 ```bash
-smile --n=0 --baudrate=9600 --bind_port=2020
+python smile.py  --n=0 --baudrate=9600 --bind_port=2020
 ```
 
 Multiple clients can then connect to the same device.
@@ -103,6 +103,17 @@ Higher baud rates may result in unstable or corrupted serial communication.
 - Required Python packages (see `pythonHost/pyproject.toml` or `requirements.txt`)  
 
 ---
+
+## Quick validation
+
+Tested from a clean Python environment with the following steps:
+1. Install PlatformIO CLI
+2. Build and upload the firmware from `pioArduinoProject`
+3. Install the Python package from `pythonHost`
+4. Start the ZeroRPC server
+5. Access the device from Jupyter Notebook
+---
+
 
 ## License (Beerware)
 

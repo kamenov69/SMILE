@@ -19,19 +19,25 @@ The firmware provides:
 
 ## Build system
 
-The project is built using PlatformIO.
+The project is built using [PlatformIO.](https://platformio.org/)
 
 ---
 
 ## Installation
-
 ### Install PlatformIO
 
-pip install platformio
+[IDE installation how to](https://platformio.org/platformio-ide)
+
+[CLI installation how to](https://docs.platformio.org/en/latest/core/installation/index.html) 
+
+[PlatformIO drivers](https://docs.platformio.org/en/latest/core/installation/udev-rules.html)
+
+
 
 ### Build
 
-cd firmware
+cd firmware 
+
 pio run
 
 ### Upload
