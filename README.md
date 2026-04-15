@@ -64,7 +64,7 @@ pio run --target upload
 ```python
 from pykidev import PykiDev
 
-ard = PykiDev('/dev/ttyACM0', baudrate=115200)
+ard = PykiDev('/dev/ttyACM0', baudrate=9600)
 print(ard.hello())
 ```
 
@@ -73,7 +73,7 @@ print(ard.hello())
 ### 3. Run as a network service (distributed mode)
 
 ```bash
-smile --n=0 --baudrate=115200 --bind_port=2020
+smile --n=0 --baudrate=9600 --bind_port=2020
 ```
 
 Multiple clients can then connect to the same device.

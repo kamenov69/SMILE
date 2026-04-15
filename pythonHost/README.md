@@ -107,6 +107,16 @@ If we meet someday, and you think this stuff is worth it, you can buy me a beer 
 — Kamen Kamenov
 
 ---
+## Hardware tested
+
+The firmware has been tested on:
+
+- Arduino Mega 2560 (ATmega2560)
+- NUCLEO-L010RB (STM32L010RB)
+
+Both platforms operate reliably at baud rates from 9600 to 115200 under Linux. Under Windows, however, the Arduino Mega 2560 board used in this project was observed to work reliably only at 9600 and approximately 57600 baud, while higher baud rates resulted in corrupted or unstable serial communication for reasons that are not yet fully understood.
+
+---
 
 ## Notes
 
