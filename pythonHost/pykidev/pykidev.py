@@ -1,6 +1,6 @@
 
 import time, sys
-from . pykiba import Pykiba
+from .pykiba import Pykiba
 
 
 class PykiDev(Pykiba):
