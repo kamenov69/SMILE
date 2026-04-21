@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "SMILE: Scalable Modular Instrumentation for Laboratory Experiments"
+message: "If you use this software, please cite it as below."
+type: software
+
+authors:
+  - family-names:"Kamenov"
+    given-names: "k.P."
+    affiliation: "Institute of Solid State Physics, Bulgarian Academy of Sciences, 72 Tzarigradsko Chaussee Blvd., Sofia, 1784, Bulgaria"
+    
+ - family-names: "Angelov,v"
+    given-names: "V.Ts."
+    affiliation: "Faculty of Electronic Engineering and Technologies, Technical University of Sofia, 8 St.Kl. Ohridski blvd., Sofia, 1797, Bulgaria"
+    
+  - family-names:"Karlov,"
+    given-names: "L.P."
+    affiliation: "Faculty of Telecommunications, Technical University of Sofia, 8 St.Kl. Ohridski blvd., Sofia, 1756, Bulgaria"
+    
+  - family-names:"Buchkov"
+    given-names: "K.M."
+    affiliation: "Institute of Solid State Physics, Bulgarian Academy of Sciences, 72 Tzarigradsko Chaussee Blvd., Sofia, 1784, Bulgaria"
+
+version: "1.0.1"
+date-released: 2026-04-21
+
+license: MIT
+
+repository-code: "https://github.com/kamenov69/SMILE"
+
+abstract: >
+  Lightweight framework for building modular and distributed laboratory
+  instrumentation using Arduino and Python with ZeroRPC communication.
