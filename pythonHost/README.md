@@ -97,14 +97,8 @@ This design allows seamless transition from local scripts to distributed laborat
 
 ---
 
-## License (Beerware)
-
-"THE BEER-WARE LICENSE" (Revision 42):
-
-As long as you retain this notice, you can do whatever you want with this stuff.  
-If we meet someday, and you think this stuff is worth it, you can buy me a beer in return.
-
-— Kamen Kamenov
+## License 
+MIT Copyright (c) 2026 Institute of Solid State Physics, Bulgarian Academy of Sciences
 
 ---
 ## Hardware tested

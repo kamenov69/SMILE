@@ -57,11 +57,6 @@ Both platforms operate reliably at baud rates from 9600 to 115200 under Linux. U
 
 ---
 
-## License (Beerware)
+## License 
+MIT Copyright (c) 2026 Institute of Solid State Physics, Bulgarian Academy of Sciences
 
-"THE BEER-WARE LICENSE" (Revision 42):
-
-As long as you retain this notice, you can do whatever you want with this stuff.  
-If we meet someday, and you think this stuff is worth it, you can buy me a beer in return.
-
-— Kamen Kamenov
