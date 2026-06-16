@@ -19,7 +19,7 @@ void setup() {
   setup_board();
   setup_ps_data();
 
-  //add_new_global_var("glo", 1, 0, 10);
+  add_new_global_var("glo", 1, 0, 10000);
   //add_new_global_var("glo1", 7, 10, 10);
   setup_var_list_cmd();
 }
