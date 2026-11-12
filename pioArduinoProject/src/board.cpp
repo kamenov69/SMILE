@@ -19,14 +19,14 @@ Ticker ledTicker(_led_task, LED_PERIOD, 0, MILLIS);
 
 
 void setup_board(){   
-    Serial.begin(9600);
-    //Serial.begin(115200);
+    //Serial.begin(9600);
+    Serial.begin(115200);
  
     pinMode(LED_BUILTIN, OUTPUT); // Initialize the BUILTIN_LED pin as an output
     digitalWrite(LED_BUILTIN, LOW); // Turn the LED off by making the voltage LOW
 
     cmdInit(&Serial);
-    cmdAdd("hello", [](int argn, char** args){cmdGetStream()->println("Arduino SMILE");});
+    cmdAdd("hello", [](int argn, char** args){cmdGetStream()->println("SMILE");});
     cmdAdd("mode", _set_mode);
     //add_new_global_var("mode", mode, 0, 3);
     ledTicker.start();
